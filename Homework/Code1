@@ -1,1 +1,55 @@
 
+const int pinRed = A0;
+const int pinGreen = A1;
+const int pinBlue = A2;
+
+const int ledRed = 11;
+const int ledGreen = 10;
+const int ledBlue = 9;
+
+float potRed= 0;
+float potGreen = 0;
+float potBlue = 0;
+
+float ledValRed = 0;
+float ledValGreen = 0;
+float ledValBlue = 0;
+
+int inputMin = 0;
+int inputMax = 1023;
+int ledPinMin = 0;
+int ledPinMax = 255;
+
+void setup() {
+  pinMode(ledRed, OUTPUT);
+  pinMode(ledGreen, OUTPUT);
+  pinMode(ledBlue, OUTPUT);
+}
+
+void citire()
+{
+  potRed = analogRead(pinRed);
+  potGreen = analogRead(pinGreen);
+  potBlue = analogRead(pinBlue);
+}
+
+void mapare()
+{
+  ledValRed = map(potRed, inputMin, inputMax, ledPinMin, ledPinMax);
+  ledValGreen = map(potGreen, inputMin, inputMax, ledPinMin, ledPinMax);
+  ledValBlue = map(potBlue, inputMin, inputMax, ledPinMin, ledPinMax);
+}
+
+void Scriere()
+{
+  analogWrite(ledRed, ledValRed);
+  analogWrite(ledGreen, ledValGreen);
+  analogWrite(ledBlue, ledValBlue); 
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  citire();
+  mapare();
+  Scriere();
+}
