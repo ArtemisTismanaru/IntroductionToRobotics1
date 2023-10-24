@@ -5,7 +5,7 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
 
 <details>
   <summary> <h2>Homework 1: RGB led control with 3 potentiometers </h2> </summary>
-</details>
+
 
 ### 💻 Code: [See my code:] (https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/Homework/Code1)
 
@@ -13,4 +13,6 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
 
 ### 🔌 Schema electronica (https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/Homework/WhatsApp%20Image%202023-10-25%20at%2000.46.37.jpeg)
 
-### 🖼️ Poza Setup (
+### 🖼️ Poza Setup (https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/Homework/WhatsApp%20Image%202023-10-25%20at%2000.45.57.jpeg)
+
+</details>
