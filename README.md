@@ -7,7 +7,7 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
   <summary> <h2>Homework 1: RGB led control with 3 potentiometers </h2> </summary>
 </details>
 
-### :💻: Code: [See my code:](https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/Homework/Code1)
+### :💻: Code: [See my code:] (https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/Homework/Code1)
 
 ### :🎥: Cum functioneaza (https://youtube.com/shorts/V9qGQQUacq0?si=pEYdPxho2bK9czGy)
 
