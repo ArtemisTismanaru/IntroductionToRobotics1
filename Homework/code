@@ -1,0 +1,159 @@
+const int buttonPinFloor1 = 2;
+const int buttonPinFloor2 = 3;
+const int buttonPinFloor3 = 4;
+
+const int debounceDelay = 50;  
+unsigned long lastDebounceTime = 0;  
+int lastButtonStateFloor1 = HIGH;  
+int lastButtonStateFloor2 = HIGH;  
+int lastButtonStateFloor3 = HIGH;
+
+const int buzzerPin = 11;
+
+const int ledPinFloor1 = 8;
+const int ledPinFloor2 = 9;
+const int ledPinFloor3 = 10;
+
+const int ledPinElevatorState = 12;
+
+int buzzerTone = 1000;
+int currentFloor = 1;
+int targetFloor = -1;
+int direction = 0;
+unsigned long previosMillis = 0;
+unsigned long currentMillis = 0;
+unsigned long interval = 500; 
+
+void setup() {
+  pinMode(buttonPinFloor1, INPUT_PULLUP);
+  pinMode(buttonPinFloor2, INPUT_PULLUP);
+  pinMode(buttonPinFloor3, INPUT_PULLUP);
+  pinMode(ledPinFloor1, OUTPUT);
+  pinMode(ledPinFloor2, OUTPUT);
+  pinMode(ledPinFloor3, OUTPUT);
+  pinMode(ledPinElevatorState, OUTPUT);
+  
+  Serial.begin(9600);
+}
+
+void loop() {
+  int buttonStateFloor1 = digitalRead(buttonPinFloor1);
+  int buttonStateFloor2 = digitalRead(buttonPinFloor2);
+  int buttonStateFloor3 = digitalRead(buttonPinFloor3);
+
+  debounceButton(buttonPinFloor1, lastButtonStateFloor1, targetFloor, 1);
+  debounceButton(buttonPinFloor2, lastButtonStateFloor2, targetFloor, 2);
+  debounceButton(buttonPinFloor3, lastButtonStateFloor3, targetFloor, 3);
+
+  if (targetFloor != -1 && targetFloor != currentFloor) {
+    currentMillis = millis();
+    if (currentMillis - previosMillis >= interval) {
+      previosMillis = currentMillis;
+      moveElevator(targetFloor, direction);
+    }
+  }
+
+  if (buttonStateFloor1 == LOW && currentFloor != 1) {
+    targetFloor = 1;
+    direction = (targetFloor > currentFloor) ? 1 : -1;
+  }
+  if (buttonStateFloor2 == LOW && currentFloor != 2) {
+    targetFloor = 2;
+    direction = (targetFloor > currentFloor) ? 1 : -1;
+  }
+  if (buttonStateFloor3 == LOW && currentFloor != 3) {
+    targetFloor = 3;
+    direction = (targetFloor > currentFloor) ? 1 : -1;
+  }
+
+  if (targetFloor != -1 && targetFloor != currentFloor) {
+    currentMillis = millis();
+    if (currentMillis - previosMillis >= interval) {
+      previosMillis = currentMillis;
+      moveElevator(targetFloor, direction);
+    }
+  }
+}
+
+void debounceButton(int buttonPin, int &lastButtonState, int &target, int targetValue) {
+  int buttonState = digitalRead(buttonPin);
+
+  if (buttonState != lastButtonState) {
+    lastDebounceTime = millis();
+  }
+
+  if (millis() - lastDebounceTime > debounceDelay) {
+    if (buttonState != lastButtonState) {
+      lastButtonState = buttonState;
+
+      if (buttonState == LOW && target != targetValue) {
+        target = targetValue;
+        direction = (target > currentFloor) ? 1 : -1;
+      }
+    }
+  }
+}
+
+void moveElevator(int floor, int direction) {
+  digitalWrite(ledPinElevatorState, LOW);
+  pulseLED(ledPinElevatorState);
+
+  int step = (direction == 1) ? 1 : -1;
+
+  int startFloor = currentFloor;
+  for(  ;currentFloor != floor; ) {
+    currentFloor += step;
+    updateFloorIndicators();
+    pulseLED(ledPinElevatorState);
+    if (currentFloor == floor) {
+      currentFloor = floor;
+      updateFloorIndicators();
+      digitalWrite(ledPinElevatorState, HIGH);
+      tone(buzzerPin, buzzerTone, 300);
+      delay(1000);
+      doorOpenSound();
+      delay(1000);
+      doorCloseSound();
+      break;
+    }
+  }
+}
+
+void updateFloorIndicators() {
+  digitalWrite(ledPinFloor1, currentFloor == 1);
+  digitalWrite(ledPinFloor2, currentFloor == 2);
+  digitalWrite(ledPinFloor3, currentFloor == 3);
+}
+
+void pulseLED(int ledPin) {
+  for (int i = 0; i <= 255; i++) {
+    analogWrite(ledPin, i);
+    delayMicroseconds(1000);
+  }
+  for (int i = 255; i >= 0; i--) {
+    analogWrite(ledPin, i);
+    delayMicroseconds(1000);
+  }
+}
+void doorOpenSound() {
+  int notes[] = {523, 587, 659, 698, 784, 880, 988, 1047};
+
+  int noteDuration = 150;
+
+  for (int i = 0; i < 8; i++) {
+    tone(buzzerPin, notes[i], noteDuration);
+    delay(noteDuration);
+  }
+  noTone(buzzerPin); 
+}
+void doorCloseSound() {
+  int notes[] = {1047, 988, 880, 784, 698, 659, 587, 523};
+
+  int noteDuration = 150;
+
+  for( int i = 0; i < 8; i++){
+    tone(buzzerPin, notes[i], noteDuration);
+    delay(noteDuration);
+  }
+  noTone(buzzerPin);
+}
