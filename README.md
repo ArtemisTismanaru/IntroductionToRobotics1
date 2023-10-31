@@ -16,3 +16,7 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
 ### 🖼️ Poza Setup (https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/Homework/WhatsApp%20Image%202023-10-25%20at%2000.45.57.jpeg)
 
 </details>
+
+<details>
+  <summary> <h2>Homework 2: Elevator Simulator </h2> </summary>
+</details>
