@@ -24,5 +24,6 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
 
 ### 🎥 Cum functioneaza (https://youtube.com/shorts/H0xt9Ap6oJ8?si=-QcVK73RqbiOr8Gu)
 
+### 🔌 Schema Electronica (
 
 </details>
