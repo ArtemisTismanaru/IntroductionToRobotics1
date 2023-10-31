@@ -26,4 +26,6 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
 
 ### 🔌 Schema Electronica (https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/WhatsApp%20Image%202023-11-01%20at%2000.47.53.jpeg)
 
+### 🖼️ Poza Setup (https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/WhatsApp%20Image%202023-11-01%20at%2001.11.24.jpeg)
+
 </details>
