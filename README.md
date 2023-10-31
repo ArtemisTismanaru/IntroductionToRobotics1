@@ -22,5 +22,7 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
 
 ### 💻 Code: (https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/Homework/code)
 
+### 🎥 Cum functioneaza (https://youtube.com/shorts/H0xt9Ap6oJ8?si=-QcVK73RqbiOr8Gu)
+
 
 </details>
