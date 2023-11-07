@@ -44,7 +44,7 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
   Short pressing the button toggles state 2. Long pressing the button in state 1 resets the entire display by turning all the segments OFF and moving the current     position to the decimal point.
   2. State 2 (initiated after a button press in State 1): The current segment stops blinking, adopting the state of the segment before selection (ON or OFF).         Toggling the X axis should change the segment state from ON to OFF or from OFF to ON. Clicking the joystick should save the segment state and exit back to state    1.
 
-  ![image](https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/homework2/WhatsApp%20Image%202023-11-01%20at%2001.11.24.jpeg)
+  ![image](https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/homework2/WhatsApp%20Image%202023-11-07%20at%2022.45.46.jpeg)
   
 
 
