@@ -29,3 +29,22 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
 ### 🖼️ Poza Setup (https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/WhatsApp%20Image%202023-11-01%20at%2001.11.24.jpeg)
 
 </details>
+
+</details>
+  <summary> <h2>Homework 3: 7 segment display drawing 🎮 </h2> </summary>
+  <br>
+
+  ### Task: The joystick will be used to control the position of the segment on the display
+  ### Components:
+  - 7 segment display
+  - joystick
+
+  ### The system has the following states:
+  1. State 1 (default, but also initiated after a button press in State 2): Current position blinking. Can use the joystick to move from one position to neighbors. 
+  Short pressing the button toggles state 2. Long pressing the button in state 1 resets the entire display by turning all the segments OFF and moving the current     position to the decimal point.
+  2. State 2 (initiated after a button press in State 1): The current segment stops blinking, adopting the state of the segment before selection (ON or OFF).         Toggling the X axis should change the segment state from ON to OFF or from OFF to ON. Clicking the joystick should save the segment state and exit back to state    1.
+
+  ![image](
+  
+
+
