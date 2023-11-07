@@ -49,7 +49,7 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
   
   ### 💻 Code: (https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/homework2/code1)
 
-  ### 🎥 How it works: 
+  ### 🎥 How it works: (https://youtube.com/shorts/vXZ6uFWi6N8?si=PrDexMHQWC0MWhRt)
 
 
   ![schema]()
