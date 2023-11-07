@@ -46,5 +46,12 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
 
   ![image](https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/homework2/WhatsApp%20Image%202023-11-07%20at%2022.45.46.jpeg)
   
+  
+  ### 💻 Code: 
+
+  ### 🎥 How it works: 
+
+
+  ![schema]()
 
 
