@@ -30,7 +30,7 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
 
 </details>
 
-</details>
+<details>
   <summary> <h2>Homework 3: 7 segment display drawing 🎮 </h2> </summary>
   <br>
 
@@ -52,6 +52,9 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
   ### 🎥 How it works: (https://youtube.com/shorts/vXZ6uFWi6N8?si=PrDexMHQWC0MWhRt)
 
 
-  ![schema]()
+  ![schema](https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/homework2/WhatsApp%20Image%202023-11-07%20at%2022.53.27.jpeg)
+
+  </br>
+</details>
 
 
