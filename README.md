@@ -58,7 +58,7 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
 </details>
 
 <details>
-  <summary> <h2>Homework 4: Stopwatch Timer  </h2> </summary>
+  <summary> <h2>Homework 4: Stopwatch Timer ⏰ </h2> </summary>
   <br>
 
   ### Task: Using the 4 digit 7 segment display and 3 buttons,you should implement a stopwatch timer that counts in 10ths of a secondand has a save lap functionality
