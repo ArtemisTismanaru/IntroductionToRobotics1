@@ -57,4 +57,30 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
   </br>
 </details>
 
+<details>
+  <summary> <h2>Homework 4: Stopwatch Timer  </h2> </summary>
+  <br>
+
+  ### Task: Using the 4 digit 7 segment display and 3 buttons,you should implement a stopwatch timer that counts in 10ths of a secondand has a save lap functionality
+  ### Components:
+  - 4 digit 7 segment display
+  - 3 buttons
+  - 1 LED
+  - 1 shift register
+
+  ![image](https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/homework2/WhatsApp%20Image%202023-11-07%20at%2022.45.46.jpeg)
+  
+  
+  ### 💻 Code: (https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/homework2/code1)
+
+  ### 🎥 How it works: (https://youtube.com/shorts/vXZ6uFWi6N8?si=PrDexMHQWC0MWhRt)
+
+
+  ![schema](https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/homework2/WhatsApp%20Image%202023-11-07%20at%2022.53.27.jpeg)
+
+  </br>
+</details>
+
+
+
 
