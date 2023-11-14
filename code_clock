@@ -1,0 +1,176 @@
+//acest cod pleaca de la cel din laborator, am adaugat un led ca sa ma pot ajuta de el
+//butoanele 1 si 2 functioneaza insa nu am reusit sa finalizez butonul 3
+//schema electronica este facuta impreuna cu Ana Cimpeanu si Nicoleta Iova
+const int latchPin = 11;
+const int clockPin = 10;
+const int dataPin = 12;
+
+const int segD1 = 4;
+const int segD2 = 5;
+const int segD3 = 6;
+const int segD4 = 7;
+
+int displayDigits[] = {segD1, segD2, segD3, segD4};
+const int displayCount = 4;
+
+byte byteEncodings[] = {
+  B11111100, B01100000, B11011010, B11110010, B01100110, B10110110, B10111110, B11100000,
+  B11111110, B11110110, B11101110, B00111110, B10011100, B01111010, B10011110, B10001110
+};
+
+byte decimalPoint = B00000001;
+
+unsigned long lastIncrement = 0;
+unsigned long delayCount = 100;
+unsigned int number = 0;
+
+const int buttonPin = 3;
+volatile bool buttonPressed = false;
+bool isRunning = false;
+bool isDisplayOn = true;
+
+const int ledPin = 13;
+byte ledState = HIGH;
+
+const int buttonPin2 = 8;
+
+const int buttonPin3 = 2;
+volatile bool button3Pressed = false;
+
+const int maxStoredValues = 4; 
+int storedValues[maxStoredValues];
+int storedValuesCount = 0;
+
+void setup() {
+  pinMode(latchPin, OUTPUT);
+  pinMode(clockPin, OUTPUT);
+  pinMode(dataPin, OUTPUT);
+  pinMode(ledPin, OUTPUT);
+  
+  pinMode(buttonPin, INPUT_PULLUP);
+  pinMode(buttonPin2, INPUT_PULLUP);
+  pinMode(buttonPin3, INPUT_PULLUP);
+
+  for (int i = 0; i < displayCount; i++) {
+    pinMode(displayDigits[i], OUTPUT);
+    digitalWrite(displayDigits[i], LOW);
+  }
+
+  Serial.begin(9600);
+  setInitialState();
+
+  attachInterrupt(digitalPinToInterrupt(buttonPin), handleInterrupt, FALLING);
+  attachInterrupt(digitalPinToInterrupt(buttonPin3), handleButton3Interrupt, FALLING);
+}
+
+void setInitialState() {
+  // functie pentru setarea starii initiale
+  number = 0;
+  writeNumber(number);
+}
+
+void checkButtonReset(){
+  //functie pentru al doilea buton
+  if(digitalRead(buttonPin2) == LOW)
+    setInitialState();
+}
+
+void loop() {
+  if (isRunning) {
+    updateDisplay();
+  } else {
+    if(isDisplayOn){
+      writeNumber(number);
+    }
+    ledState = LOW;
+    digitalWrite(ledPin, ledState);
+    if(ledState == LOW)
+      checkButtonReset();
+  }
+}
+
+void handleButton3Interrupt() {
+  if (storedValuesCount < maxStoredValues) {
+    // stocarea valorii curente in array
+    storeCurrentValue();
+    // afisarea valorilor in Serial Monitor
+    printStoredValues();
+  }
+}
+
+void handleInterrupt() {
+  static unsigned long lastInterruptTime = 0;
+  unsigned long interruptTime = millis();
+  if (interruptTime - lastInterruptTime > 200) {
+    buttonPressed = true;
+    isRunning = !isRunning;
+
+    if (!isRunning) {
+      isDisplayOn = true;
+    }
+  }
+  lastInterruptTime = interruptTime;
+}
+
+void updateDisplay() {
+  // actualizare afisaj
+  ledState = HIGH;
+  if (millis() - lastIncrement > delayCount) {
+    number++;
+    number %= 10000;
+    lastIncrement = millis();
+  }
+  writeNumber(number);
+  digitalWrite(ledPin, ledState);
+}
+
+void storeCurrentValue() {
+  //stocarea valorii curente
+  storedValues[storedValuesCount] = number;
+  storedValuesCount = (storedValuesCount + 1) % maxStoredValues;
+}
+
+void printStoredValues() {
+  // afisarea valorilor stocate
+  Serial.println("Stored Values:");
+  for (int i = 0; i < maxStoredValues; i++) {
+    int index = (storedValuesCount + i) % maxStoredValues;
+    Serial.println(storedValues[index]);
+  }
+}
+
+void writeReg(int digit) {
+  digitalWrite(latchPin, LOW);
+  shiftOut(dataPin, clockPin, MSBFIRST, digit);
+  digitalWrite(latchPin, HIGH);
+}
+
+void activateDisplay(int displayNumber) {
+  for (int i = 0; i < displayCount; i++) {
+    digitalWrite(displayDigits[i], HIGH);
+  }
+  digitalWrite(displayDigits[displayNumber], LOW);
+}
+
+void writeNumber(int number) {
+  // scrierea unui numar
+  int currentNumber = number;
+  int displayDigit = displayCount - 1;
+  int lastDigit = 0;
+
+  while (displayDigit >= 0) {
+    lastDigit = currentNumber % 10;
+    activateDisplay(displayDigit);
+
+    if (displayDigit == 2) {
+      writeReg(byteEncodings[lastDigit] | decimalPoint);
+    } else {
+      writeReg(byteEncodings[lastDigit]);
+    }
+
+    delay(1);
+    displayDigit--;
+    currentNumber /= 10;
+    writeReg(B00000000);
+  }
+}
