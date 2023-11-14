@@ -71,12 +71,12 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
   ![image](https://github.com/tinutzaa/IntroductionToRobotics1/raw/main/WhatsApp%20Image%202023-11-14%20at%2023.33.54.jpeg?raw=true&s=30)
   
   
-  ### 💻 Code: (https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/homework2/code1)
+  ### 💻 Code: (https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/code_clock)
 
-  ### 🎥 How it works: (https://youtube.com/shorts/vXZ6uFWi6N8?si=PrDexMHQWC0MWhRt)
+  ### 🎥 How it works: (https://youtube.com/shorts/kvDU60dixpo?si=LY0Mh3diRHIHFv1o)
 
 
-  ![schema](https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/homework2/WhatsApp%20Image%202023-11-07%20at%2022.53.27.jpeg)
+  ![schema]()
 
   </br>
 </details>
