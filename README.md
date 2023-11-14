@@ -77,7 +77,7 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
   ### 🎥 How it works: (https://youtube.com/shorts/kvDU60dixpo?si=LY0Mh3diRHIHFv1o)
 
 
-  ![schema](https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/WhatsApp%20Image%202023-11-14%20at%2023.33.48.jpeg)
+  <img src="https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/WhatsApp%20Image%202023-11-14%20at%2023.33.48.jpeg" alt="Imagine" width="500" height="400">
 
   </br>
 </details>
