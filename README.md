@@ -68,8 +68,8 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
   - 1 LED
   - 1 shift register
 
-  ![image](https://github.com/tinutzaa/IntroductionToRobotics1/raw/main/WhatsApp%20Image%202023-11-14%20at%2023.33.54.jpeg?raw=true&s=30)
-  <img src="https://github.com/tinutzaa/IntroductionToRobotics1/raw/main/WhatsApp%20Image%202023-11-14%20at%2023.33.54.jpeg" alt="Imagine" width="300" height="200">
+  
+  <img src="https://github.com/tinutzaa/IntroductionToRobotics1/raw/main/WhatsApp%20Image%202023-11-14%20at%2023.33.54.jpeg" alt="Imagine" width="500" height="400">
   
   
   ### 💻 Code: (https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/code_clock)
