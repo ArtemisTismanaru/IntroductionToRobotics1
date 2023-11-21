@@ -82,6 +82,21 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
   </br>
 </details>
 
+</details>
+  <summary> <h2>Homework 5: Pseudo-Smart Environment Monitor and Logger </h2> </summary>
 
+  <br>
+  ### Task: This sys-tem will utilize various sensors to gather environmental data, log this data intoEEPROM, and provide both visual feedback via an RGB LED and user interac-tion through a Serial Menu.  The project focuses on integrating sensor readings,memory management, Serial Communication and the general objective of build-ing a menu.
+  ### Components:
+    •Arduino Uno Board
+    •Ultrasonic Sensor (HC-SR04)
+    •LDR (Light-Dependent Resistor) aka Photocell aka Photoresistor aka LightSensor
+    •RGB LED•Resistors as needed
+    •Breadboard and connecting wires
+
+
+ </br>
+</details>
+ 
 
 
