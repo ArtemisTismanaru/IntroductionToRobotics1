@@ -82,7 +82,8 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
   </br>
 </details>
 
-</details>
+
+<details>
   <summary> <h2>Homework 5: Pseudo-Smart Environment Monitor and Logger </h2> </summary>
 
   <br>
