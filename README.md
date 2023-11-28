@@ -104,6 +104,32 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
 
  </br>
 </details>
+
+
+<details>
+  <summary> <h2>Homework 6: Mini 8x8 LED Matrix game 🎮 </h2> </summary>
+
+  <br>
+  
+  ### Task: Develop a small game on the 8x8 matrix.  The game must have at least 3 typesof elements:  player (blinks slowly),  bombs/bullets (blinks fast),  wall (doesn’tblink). The basic idea is that you generate walls on the map (50% - 75% of the map) and thenyou move around with the player and destroy them.
+  ### Components:
+    •Arduino Uno Board
+    •Joystick
+    •8x8 LED Matrix
+    •MAX7219
+    •Resistors and capacitors as needed
+    •Breadboard and connecting wires
+    •Buzzer
+
+  ### 💻 Code: ()
+
+  ### 🎥 How it works: (https://youtube.com/shorts/qBRE4HEZUOc?si=ysTbGnolLoKnQNT_)
+
+  <img src="https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/Homework/IMG_9626%202.JPG" alt="Imagine" width="500" height="400">
+
+ </br>
+</details>
+ 
  
 
 
