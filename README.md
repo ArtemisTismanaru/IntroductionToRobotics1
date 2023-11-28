@@ -121,11 +121,11 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
     •Breadboard and connecting wires
     •Buzzer
 
-  ### 💻 Code: ()
+  ### 💻 Code: (https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/Homework/matrix1.ino)
 
-  ### 🎥 How it works: (https://youtube.com/shorts/qBRE4HEZUOc?si=ysTbGnolLoKnQNT_)
+  ### 🎥 How it works: (https://youtu.be/IQOrVHIVJLI?feature=shared)
 
-  <img src="https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/Homework/IMG_9626%202.JPG" alt="Imagine" width="500" height="400">
+  <img src="" width="500" height="400">
 
  </br>
 </details>
