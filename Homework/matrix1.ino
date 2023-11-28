@@ -1,3 +1,4 @@
+//in video am scos buzzer ul pentru ca era zgomotos si deranja, i m sorry :)))))))
 #include <LedControl.h>
 
 // Pin configurations for components
