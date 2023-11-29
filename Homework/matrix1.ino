@@ -146,9 +146,10 @@ void generateRandomWalls() {
     }
   }
   
-  // Place player at a random position
+  do{
   playerX = random(MATRIX_SIZE);
   playerY = random(MATRIX_SIZE);
+  }while(walls[playerY][playerX] || isPlayerSurrounded(playerX, playerY));
 }
 
 // Function to display walls on the LED Matrix
