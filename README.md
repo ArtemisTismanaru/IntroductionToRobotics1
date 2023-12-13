@@ -131,7 +131,37 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
 
  </br>
 </details>
+
+
  
- 
+ <details>
+  <summary> <h2>Homework 7: Mini 8x8 LED Matrix game part. 2 🎮 </h2> </summary>
+
+  <br>
+  
+  ### Task: Develop a game on the 8x8 matrix.  The game must have at least 3 typesof elements:  player (blinks slowly),  bombs/bullets (blinks fast),  wall (doesn’tblink). The basic idea is that you generate walls on the map (50% - 75% of the map) and then you move around with the player and destroy them. Also you should have a LCD display with an intro message and a menu.
+
+  ### Components:
+    •Arduino Uno Board
+    •Joystick
+    •8x8 LED Matrix
+    •MAX7219
+    •Resistors and capacitors as needed
+    •Breadboard and connecting wires
+    •Buzzer
+    •LCD display
+
+  ### Description: "BomberMan Jungle Adventure" is a fast-paced maze game where players strategically navigate through a jungle filled with walls. Using a joystick, they aim to place bombs strategically to clear obstacles and earn points. The game features dynamic menus, LED matrix displays, and a countdown element, adding excitement to the quest for the highest score.
+
+  ### 💻 Code: (https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/Homework/matrix1.ino)
+
+  ### 🎥 How it works: (https://youtu.be/IQOrVHIVJLI?feature=shared)
+
+  <img src="https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/Homework/image.png" width="400" height="500">
+
+  <img src="https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/Homework/WhatsApp%20Image%202023-11-28%20at%2022.48.13.jpeg" width="500" height="300">
+
+ </br>
+</details>
 
 
