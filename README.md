@@ -157,7 +157,7 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
 
   ### 🎥 How it works: (https://youtu.be/--uN2YxSzXs?feature=shared)
 
-  <img src="" width="400" height="500">
+  <img src="https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/Homework/WhatsApp%20Image%202023-12-13%20at%2001.22.01.jpeg" width="400" height="500">
 
 
  </br>
