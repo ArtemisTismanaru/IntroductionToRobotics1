@@ -153,13 +153,12 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
 
   ### Description: "BomberMan Jungle Adventure" is a fast-paced maze game where players strategically navigate through a jungle filled with walls. Using a joystick, they aim to place bombs strategically to clear obstacles and earn points. The game features dynamic menus, LED matrix displays, and a countdown element, adding excitement to the quest for the highest score.
 
-  ### 💻 Code: (https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/Homework/matrix1.ino)
+  ### 💻 Code: (https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/Homework/homework_7.ino)
 
-  ### 🎥 How it works: (https://youtu.be/IQOrVHIVJLI?feature=shared)
+  ### 🎥 How it works: (https://youtu.be/--uN2YxSzXs?feature=shared)
 
-  <img src="https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/Homework/image.png" width="400" height="500">
+  <img src="" width="400" height="500">
 
-  <img src="https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/Homework/WhatsApp%20Image%202023-11-28%20at%2022.48.13.jpeg" width="500" height="300">
 
  </br>
 </details>
