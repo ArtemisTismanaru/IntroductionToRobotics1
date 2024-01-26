@@ -164,3 +164,20 @@ Laboratory sssignments for the Robotics Introduction Course, completed during th
 </details>
 
 
+ <details>
+  <summary> <h2>Homework 8: Sequence memory game </h2> </summary>
+
+  <br>
+  
+  ### Description: This adorable code is crafted for an engaging game on the Arduino platform! 🕹️ The game features four colorful buttons (red, green, blue, and yellow) with sparkling LEDs and a cheerful buzzer for musical sounds! 🌈 The delightful goal of the game is to memorize and reproduce randomly generated sequences of colors and sounds. 💡 Start in "MODE_MEMORY" and enjoy the game cycles until you win or lose, all based on how accurately you reproduce the sequences. 🎮
+
+  ### 💻 Code: (https://github.com/tinutzaa/IntroductionToRobotics1/blob/main/Homework/homework_7.ino)
+
+  ### 🎥 How it works: (https://youtu.be/YPsODlUnN0A?si=OlolpkEqH_hKSM79)
+
+  <img src="" width="400" height="500">
+
+
+ </br>
+</details>
+
